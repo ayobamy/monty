@@ -68,7 +68,8 @@ void _swap(stack_t **stack, unsigned int line_number);
 void _add(stack_t **stack, unsigned int line_number);
 void _nop(stack_t **stack, unsigned int line_number);
 int _isalpha(int c);
-
+void dobfree(stack_t **stack);
+void dobfree2(stack_t **stack);
 
 
 #endif
