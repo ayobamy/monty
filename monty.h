@@ -59,6 +59,7 @@ extern global_var var_global;
 void read_file(char *filename, stack_t **stack);
 char *parse_line(char *line, stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number);
+void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number);
 
 
 
