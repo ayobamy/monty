@@ -15,7 +15,7 @@ extern int push_arg;
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
  * @next: points to the next element of the stack (or queue)
- * 
+ *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
@@ -55,6 +55,10 @@ typedef struct global_variable
 } global_var;
 
 extern global_var var_global;
+
+void read_file(char *filename, stack_t **stack);
+char *parse_line(char *line, stack_t **stack, unsigned int line_number)
+
 
 
 #endif
