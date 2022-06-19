@@ -1,4 +1,4 @@
 # The Monty Language
 
  Done by:
-Ahmed Olawale & Chiedozie Ukah
+Ahmed Olawale and Chiedozie Ukah
