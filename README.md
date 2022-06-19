@@ -1,3 +1,3 @@
 # The Monty Language 
 
-Done by: Ahmed Olawale and Chiedozie Ukah 💯
+Done by: Ahmed Olawale and Chiedozie Ukah 
