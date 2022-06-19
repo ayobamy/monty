@@ -1,3 +1,4 @@
 # The Monty Language 🍺
 
- Done by: Ahmed Olawale & Chiedozie Ukah   
+ Done by: Ahmed Olawale 
+ Chiedozie Ukah   
