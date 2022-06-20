@@ -86,4 +86,8 @@ void free_dlistint(stack_t *head);
 void dobfree(stack_t **stack);
 void dobfree2(stack_t **stack);
 int _isalpha(int c);
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> 005ccd0ee44e34b7efce3967fd22fe69ace42e46
