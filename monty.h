@@ -15,7 +15,6 @@ extern int push_arg;
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
  * @next: points to the next element of the stack (or queue)
- *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
@@ -57,29 +56,34 @@ typedef struct global_variable
 extern global_var var_global;
 
 void read_file(char *filename, stack_t **stack);
-void instruct_func get_op_func(char *str);
 char *parse_line(char *line, stack_t **stack, unsigned int line_number);
-void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number);
-void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number);
+typedef void (*instruct_func)(stack_t **stack, unsigned int line_number);
+instruct_func get_op_func(char *str);
+
+/*Fuxntions Monty*/
+void _pall(stack_t **stack, unsigned int line_number);
+void _push(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
-void free_dlistint(stack_t *head);
 void _swap(stack_t **stack, unsigned int line_number);
-void _add(stack_t **stack, unsigned int line_number);
 void _nop(stack_t **stack, unsigned int line_number);
 void _rotl(stack_t **stack, unsigned int line_number);
 void _rotr(stack_t **stack, unsigned int line_number);
+
+/*Functions string ascci */
 void _pchar(stack_t **stack, unsigned int line_number);
 void _pstr(stack_t **stack, unsigned int line_number);
-int _isalpha(int c);
-void dobfree(stack_t **stack);
-void dobfree2(stack_t **stack);
-void _pchar(stack_t **stack, unsigned int line_number);
-void _pstr(stack_t **stack, unsigned int line_number);
+
+/*Functions math*/
 void _sub(stack_t **stack, unsigned int line_number);
 void _add(stack_t **stack, unsigned int line_number);
 void _mul(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
 void _mod(stack_t **stack, unsigned int line_number);
 
+/*Utility functions*/
+void free_dlistint(stack_t *head);
+void dobfree(stack_t **stack);
+void dobfree2(stack_t **stack);
+int _isalpha(int c);
 #endif
